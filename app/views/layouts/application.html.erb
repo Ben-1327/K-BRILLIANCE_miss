@@ -11,21 +11,21 @@
 
   <body>
     <div class="wrapper">
-      <header class="navbar">
+      <header>
         <div class="container">
-          <nav class="logo_space">
-            <%= link_to root_path do %>
-            <%= image_tag "logo_01.png", :width => "189", :height => "35" %>
-            <% end %>
-          </nav>
-          <nav class="nav">
-            <ul class="nav p-4">
-              <li class="nav-item mr-3"><%= link_to "ホーム", root_path, class: "btn btn-nav" %></li>
-              <li class="nav-item mr-3"><%= link_to "概要", class: "btn btn-nav" %></li>
-              <li class="nav-item mr-3"><%= link_to "お問い合わせ", class: "btn btn-nav" %></li>
-              <li class="nav-item"><%= link_to "プライバシーポリシー", class: "btn btn-nav" %></li>
-            </ul>
-          </nav>
+          <ul>
+            <li class="logo_space">
+              <%= link_to root_path do %>
+              <%= image_tag "logo_01.png", :width => "189", :height => "35" %>
+              <% end %>
+            </li>
+          </ul>
+          <ul class="nav p-4">
+            <li class="nav-item mr-3"><%= link_to "ホーム", root_path, class: "btn btn-nav" %></li>
+            <li class="nav-item mr-3"><%= link_to "概要", class: "btn btn-nav" %></li>
+            <li class="nav-item mr-3"><%= link_to "お問い合わせ", class: "btn btn-nav" %></li>
+            <li class="nav-item"><%= link_to "プライバシーポリシー", class: "btn btn-nav" %></li>
+          </ul>
         </div>
       </header>
       <% if flash[:notice] %>
