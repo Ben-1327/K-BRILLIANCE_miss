@@ -39,6 +39,10 @@
   font-family:'Hannari';
 }
 
+li {
+  list-style: none;
+}
+
 .link_text{
   color: #322D00;
   text-decoration: none;
@@ -50,11 +54,13 @@
 }
 
 header{
+  position: fixed;
   height: 10vh;
   background-color: white;
-  position: fixed;
   transition: .5s;
   width: 100%;
+  top: 0;
+  left: 0;
   z-index: 10;
 }
 
