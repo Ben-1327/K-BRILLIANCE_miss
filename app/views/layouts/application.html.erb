@@ -10,6 +10,57 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="wrapper">
+      <header class="navbar">
+        <div class="container">
+          <nav class="logo_space">
+            <%= link_to root_path do %>
+            <%= image_tag "logo_01.png", :width => "189", :height => "35" %>
+            <% end %>
+          </nav>
+          <nav class="nav">
+            <ul class="nav p-4">
+              <li class="nav-item mr-3"><%= link_to "ホーム", root_path, class: "btn btn-nav" %></li>
+              <li class="nav-item mr-3"><%= link_to "概要", class: "btn btn-nav" %></li>
+              <li class="nav-item mr-3"><%= link_to "お問い合わせ", class: "btn btn-nav" %></li>
+              <li class="nav-item"><%= link_to "プライバシーポリシー", class: "btn btn-nav" %></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <% if flash[:notice] %>
+        <div class="flash">
+          <%= flash[:notice] %>
+        </div>
+      <% end %>
+      <div class="main">
+        <%= yield %>
+      </div>
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-3 logo_space">
+              <%= link_to root_path do %>
+                <%= image_tag "logo_01.png", :width => "270", :height => "50" %>
+              <% end %>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-8 navbar">
+              <nav class="nav">
+                <ul class="nav p-4">
+                  <li class="nav-item mr-3"><%= link_to "Home", class: "btn btn-nav" %></li>
+                  <li class="nav-item mr-3"><%= link_to "About", class: "btn btn-nav" %></li>
+                  <li class="nav-item mr-3"><%= link_to "Contact", class: "btn btn-nav" %></li>
+                  <li class="nav-item"><%= link_to "プライバシーポリシー", class: "btn btn-nav" %></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="copyright">
+            <p>Copyright©2020-2020 株式会社プライムワン All Rights Reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
