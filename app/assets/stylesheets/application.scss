@@ -71,6 +71,48 @@ header{
   box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
 }
 
+.logo_space {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 170px;
+  line-height: 5vh;
+}
+
+.nav_space {
+  position: absolute;
+  top: 0;
+  left: 170px;
+  right: 340px;
+  line-height: 5vh;
+}
+
+
+.language_space {
+  position: absolute;
+  top: 0;
+  right: 170px;
+  line-height: 5vh;
+}
+
+.reserve_space {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 170px;
+  line-height: 5vh;
+}
+
+.nav_space ul{
+  text-align: center;
+}
+
+.nav_space ul li{
+  display: inline-block;
+  margin: 0.2%;
+  line-height: 5vh;
+}
+
 footer{
   width: 100%;
   background-color: white;
