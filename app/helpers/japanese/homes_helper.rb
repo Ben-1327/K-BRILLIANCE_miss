@@ -1,0 +1,2 @@
+module Japanese::HomesHelper
+end
